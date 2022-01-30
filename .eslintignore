@@ -1,0 +1,7 @@
+tests/.eslintrc.js
+scratch.*
+coverage/**
+dist/**
+webpack.config.js
+test/data/**
+test/**

@@ -1,0 +1,74 @@
+{
+	"name": "@searchspring/template-js",
+	"description": "JS Template Repo",
+	"version": "1.0.0",
+	"author": "Eric Hacke",
+	"bugs": {
+		"url": "https://github.com/searchspring/template-js/issues"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
+	"devDependencies": {
+		"@searchspring/commitlint-config": "^1.0.0",
+		"@searchspring/eslint-config": "^1.0.5",
+		"@searchspring/prettier": "^1.0.1",
+		"chai": "^4.2.0",
+		"commitizen": "^4.1.2",
+		"commitlint": "^11.0.0",
+		"cz-conventional-changelog": "^3.3.0",
+		"dotenv": "^8.2.0",
+		"eslint": "^7.2.0",
+		"fixpack": "^3.0.6",
+		"husky": "^4.3.0",
+		"lint-staged": "^10.4.1",
+		"mocha": "^8.1.3",
+		"nyc": "^15.1.0",
+		"prettier": "^2.1.2",
+		"sinon": "^9.2.0",
+		"standard-version": "^9.0.0"
+	},
+	"homepage": "https://github.com/searchspring/template-js#readme",
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+			"pre-commit": "lint-staged"
+		}
+	},
+	"keywords": [
+		"project",
+		"repo",
+		"template"
+	],
+	"license": "MIT",
+	"lint-staged": {
+		"./package.json": [
+			"fixpack",
+			"prettier --write"
+		],
+		"*.{js,ts}": [
+			"prettier --write",
+			"eslint --fix"
+		]
+	},
+	"main": "index.js",
+	"prettier": "@searchspring/prettier",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/searchspring/template-js.git"
+	},
+	"scripts": {
+		"commit": "cz",
+		"format": "prettier --write \"**/*.{js,ts,json}\"",
+		"lint": "eslint --fix \"**/*.{js,ts}\"",
+		"major": "npm version major && npm publish",
+		"minor": "npm version minor && npm publish",
+		"patch": "npm version patch && npm publish",
+		"release": "standard-version",
+		"style": "fixpack && npm run format && npm run lint",
+		"test": "npm run test",
+		"unit": "nyc mocha \"tests/**/*.unit.js\""
+	}
+}

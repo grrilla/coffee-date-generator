@@ -1,0 +1,18 @@
+{
+  "all": true,
+  "extension": [
+    ".js"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/scratch.*"
+  ],
+  "reporter": [
+    "html",
+    "text",
+    "text-summary",
+    "lcov"
+  ]
+}
