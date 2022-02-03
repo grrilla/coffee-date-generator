@@ -16,7 +16,7 @@
 		"@searchspring/eslint-config": "^1.0.5",
 		"@searchspring/prettier": "^1.0.1",
 		"chai": "^4.2.0",
-		"commitizen": "^4.1.2",
+		"commitizen": "^4.2.4",
 		"commitlint": "^11.0.0",
 		"cz-conventional-changelog": "^3.3.0",
 		"dotenv": "^8.2.0",
@@ -28,7 +28,7 @@
 		"nyc": "^15.1.0",
 		"prettier": "^2.1.2",
 		"sinon": "^9.2.0",
-		"standard-version": "^9.0.0"
+		"standard-version": "^9.3.2"
 	},
 	"homepage": "https://github.com/searchspring/template-js#readme",
 	"husky": {
