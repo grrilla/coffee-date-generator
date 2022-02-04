@@ -1,0 +1,8 @@
+.pairing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    width:400px
+}

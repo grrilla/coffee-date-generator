@@ -8,3 +8,14 @@ Template repo for creating JS Projects
 - Commitlint [`@searchspring/commitlint-config`](https://github.com/searchspring/commitlint-config)
 
 Checkout the `package.json` for `scripts`.
+
+## Prequisites
+
+- install http-server `brew install http-server`
+
+## Run it
+
+```
+http-server src/ -p 3000
+```
+

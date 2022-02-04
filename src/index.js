@@ -12,7 +12,7 @@ function findBestPartner(dateCandidate, dateCandidates) {
 }
 
 function pairPeople(participants) {
-	const { length } = participants;
+
 	const pairings = { matchPool: [] };
 
 	if (length < 1) {
@@ -30,7 +30,7 @@ function pairPeople(participants) {
 	// else pair off as above
 	//
 
-	for (let i = 0; i < length; i++) {
+	for (let i = 0; i < participants.length; i++) {
 		if (dateCandidates[i].dateCount === 0) {
 			const dateCandidate = dateCandidates[i];
 			pairings.matchPool.push({
