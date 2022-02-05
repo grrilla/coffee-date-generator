@@ -22,7 +22,6 @@
 		"dotenv": "^8.2.0",
 		"eslint": "^7.2.0",
 		"fixpack": "^3.0.6",
-		"husky": "^4.3.0",
 		"lint-staged": "^10.4.1",
 		"mocha": "^8.1.3",
 		"nyc": "^15.1.0",
@@ -31,12 +30,6 @@
 		"standard-version": "^9.3.2"
 	},
 	"homepage": "https://github.com/searchspring/template-js#readme",
-	"husky": {
-		"hooks": {
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-			"pre-commit": "lint-staged"
-		}
-	},
 	"keywords": [
 		"project",
 		"repo",
